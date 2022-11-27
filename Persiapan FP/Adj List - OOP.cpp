@@ -21,12 +21,10 @@ Graph::Graph(int vertices) {
     adjLists = new list<int> [vertices];
 }
 
-// Add edges to the graph
 void Graph::addEdge(int src, int dest) {
     adjLists[src].push_back(dest);
 }
 
-// BFS algorithm
 void Graph::BFS(int startVertex, int endVertex) {
     visited = new bool[numVertices];
     for (int i = 0; i < numVertices; i++)
@@ -118,7 +116,7 @@ int main() {
     g.addEdge(16, 17);
     g.addEdge(16, 19);
 	
-	g.addEdge(17, 12);
+    g.addEdge(17, 12);
     g.addEdge(17, 14);
 
     g.addEdge(18, 19);
