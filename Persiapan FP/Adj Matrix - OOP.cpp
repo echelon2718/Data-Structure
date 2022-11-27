@@ -113,7 +113,7 @@ int main() {
     g.addEdge(16, 17);
     g.addEdge(16, 19);
 	
-	g.addEdge(17, 12);
+    g.addEdge(17, 12);
     g.addEdge(17, 14);
 
     g.addEdge(18, 19);
